@@ -38,11 +38,36 @@ class ViewController: UIViewController {
         }
         
         //チェック　回答があっているのか
+        check()
+        
         
         //次の問題を出題
+        nextQuestion()
+        
     }
     
     
+    func check(){
+        
+        let correctAnswer = allQuestion.list[0].answer
+        
+        
+        if correctAnswer == pickedAnswer {
+            print("正解！")
+        } else {
+            print("間違い！")
+        }
+        
+    }
+    
+    func nextQuestion(){
+        if questionNumber <= 2 {
+            questionNumber = questionNumber + 1
+            questionLabel.text = allQuestion.list[questionNumber].questionText
+        }else{
+            print("終わり")
+        }
+    }
     
 
 }
