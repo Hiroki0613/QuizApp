@@ -13,10 +13,13 @@ class Question{
     let questionText: String
     let answer1: String
     let answer2: String
-    let correctCheck: Bool
     
     
-    init(questionText:String, answer1:String, answer2:String, correctOrNot:Bool){
+    //正解を示す型、answer1なら1、answer2なら２になる
+    let correctCheck: Int
+    
+    
+    init(questionText:String, answer1:String, answer2:String, correctOrNot:Int){
         
         self.questionText = questionText
         self.answer1 = answer1
