@@ -29,7 +29,20 @@ class ViewController: UIViewController {
     
     @IBAction func answer(_ sender: Any) {
         
+        if (sender as AnyObject).tag == 1 {
+            pickedAnswer = true
+        
+        } else if (sender as AnyObject).tag == 2{
+         pickedAnswer = false
+        
+        }
+        
+        //チェック　回答があっているのか
+        
+        //次の問題を出題
     }
+    
+    
     
 
 }
