@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //初期に表示される画面の実装
+        //UIButtonの表示がおかしい・・・
         questionLabel.text = allQuestion.list[0].questionText
         answer1String.titleLabel?.text = allQuestion.list[0].answer1
         answer2String.titleLabel?.text = allQuestion.list[0].answer2
@@ -81,6 +82,7 @@ class ViewController: UIViewController {
             answer2String.titleLabel?.text = allQuestion.list[questionNumber].answer2
         } else {
             print("質問終了")
+            print("正解数は\(correctAnswerNumber)")
         }
     }
     
