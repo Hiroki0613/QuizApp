@@ -10,9 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
-    @IBOutlet weak var questionLabel: UILabel!
-    
     let allQuestion = QuestionBank()
     
     var questionNumber = 0
@@ -23,11 +20,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        questionLabel.text = allQuestion.list[0].questionText
+//        questionLabel.text = allQuestion.list[0].questionText
     }
 
     
-    @IBAction func answer(_ sender: Any) {
+    
+    func answer(_ sender: Any) {
         
         if (sender as AnyObject).tag == 1 {
             pickedAnswer = true
@@ -47,28 +45,28 @@ class ViewController: UIViewController {
     }
     
     
-    func check(){
-        
-        let correctAnswer = allQuestion.list[0].answer
-        
-        
-        if correctAnswer == pickedAnswer {
-            print("正解！")
-        } else {
-            print("間違い！")
-        }
-        
-    }
-    
-    func nextQuestion(){
-        if questionNumber <= 2 {
-            questionNumber = questionNumber + 1
-            questionLabel.text = allQuestion.list[questionNumber].questionText
-        }else{
-            print("終わり")
-        }
-    }
-    
+//    func check(){
+//        
+//        let correctAnswer = allQuestion.list[0].answer
+//        
+//        
+//        if correctAnswer == pickedAnswer {
+//            print("正解！")
+//        } else {
+//            print("間違い！")
+//        }
+//        
+//    }
+//    
+//    func nextQuestion(){
+//        if questionNumber <= 2 {
+//            questionNumber = questionNumber + 1
+//            questionLabel.text = allQuestion.list[questionNumber].questionText
+//        }else{
+//            print("終わり")
+//        }
+//    }
+//    
 
 }
 
