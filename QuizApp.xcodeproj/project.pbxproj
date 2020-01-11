@@ -13,6 +13,8 @@
 		F50F9A6523C9C78B005E6DA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50F9A6323C9C78B005E6DA6 /* Main.storyboard */; };
 		F50F9A6723C9C78F005E6DA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50F9A6623C9C78F005E6DA6 /* Assets.xcassets */; };
 		F50F9A6A23C9C78F005E6DA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50F9A6823C9C78F005E6DA6 /* LaunchScreen.storyboard */; };
+		F50F9A7523C9C915005E6DA6 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F9A7423C9C915005E6DA6 /* Question.swift */; };
+		F50F9A7723C9C924005E6DA6 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F9A7623C9C924005E6DA6 /* QuestionBank.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F50F9A6623C9C78F005E6DA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F50F9A6923C9C78F005E6DA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F50F9A6B23C9C78F005E6DA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F50F9A7423C9C915005E6DA6 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		F50F9A7623C9C924005E6DA6 /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 		F50F9A7323C9C85E005E6DA6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F50F9A7423C9C915005E6DA6 /* Question.swift */,
+				F50F9A7623C9C924005E6DA6 /* QuestionBank.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,7 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F50F9A6223C9C78B005E6DA6 /* ViewController.swift in Sources */,
+				F50F9A7523C9C915005E6DA6 /* Question.swift in Sources */,
 				F50F9A5E23C9C78B005E6DA6 /* AppDelegate.swift in Sources */,
+				F50F9A7723C9C924005E6DA6 /* QuestionBank.swift in Sources */,
 				F50F9A6023C9C78B005E6DA6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
