@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         check()
         
         //次の問題を出題
-        
+        nextQuestion()
         
     }
     
