@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class QuestionBank{
+    var list = [Question]()
+    
+    init(){
+        list.append(Question(text: "東京は日本です。", correctOrNot: true))
+        list.append(Question(text: "東京はアメリカです。", correctOrNot: false))
+        list.append(Question(text: "地球は丸いです。", correctOrNot: false))
+        list.append(Question(text: "りんごは果物です。", correctOrNot: true))
+    }
+    
+}
