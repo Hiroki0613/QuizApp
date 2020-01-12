@@ -34,8 +34,9 @@ class ViewController: UIViewController {
         //初期に表示される画面の実装
         //UIButtonの表示がおかしい・・・
         questionLabel.text = allQuestion.list[0].questionText
-        answer1String.titleLabel?.text = allQuestion.list[0].answer1
-        answer2String.titleLabel?.text = allQuestion.list[0].answer2
+        answer1String.setTitle(allQuestion.list[0].answer1, for: .normal)
+        answer2String.setTitle(allQuestion.list[0].answer2, for: .normal)
+
     }
 
     
@@ -77,9 +78,9 @@ class ViewController: UIViewController {
             //問題文
             questionLabel.text = allQuestion.list[questionNumber].questionText
             //回答1
-            answer1String.titleLabel?.text = allQuestion.list[questionNumber].answer1
+            answer1String.setTitle(allQuestion.list[questionNumber].answer1, for: .normal)
             //回答2
-            answer2String.titleLabel?.text = allQuestion.list[questionNumber].answer2
+            answer2String.setTitle(allQuestion.list[questionNumber].answer2, for: .normal)
         } else {
             print("質問終了")
             print("正解数は\(correctAnswerNumber)")
