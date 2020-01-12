@@ -32,7 +32,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //初期に表示される画面の実装
-        //UIButtonの表示がおかしい・・・
         questionLabel.text = allQuestion.list[0].questionText
         answer1String.setTitle(allQuestion.list[0].answer1, for: .normal)
         answer2String.setTitle(allQuestion.list[0].answer2, for: .normal)
@@ -61,7 +60,7 @@ class ViewController: UIViewController {
     //回答を確認する
     func check(){
         
-        let correctAnswer = allQuestion.list[0].correctCheck
+        let correctAnswer = allQuestion.list[questionNumber].correctCheck
         
         if correctAnswer == pickedAnswer {
             print("正解")
